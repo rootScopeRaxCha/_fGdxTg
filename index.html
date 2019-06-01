@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es-ES" ng-app="mainApp">
+<head>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<!-- jQuery -->
+	<script src="lib/jquery.min.js"></script>
+	<!-- jQuery UI -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- Bootstrap v3 -->
+	<link rel="stylesheet" href="lib/dist/css/bootstrap.css">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Icon -->
+	<link rel="icon" href="https://spng.pngfly.com/20171220/ofe/pokeball-png-5a3ab8044b97e7.8086813315137976363096.jpg">
+	<title>Poke-Api</title>
+</head>
+<body ng-controller="mainCtrl">
+	<!-- <div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<form class="form-inline">
+					<div class="form-group">
+						<label class="control-label">Id del pokemon</label>
+						<input type="number" class="form-control" ng-model="id.number">
+					</div>
+					<button class="btn btn-default" ng-click="obtenerDatos(id)">
+							Press here
+					</button>
+					<h1 class="text-center" ng-repeat="ident in info">
+						{{ ident.name }}
+						{{ ident.id }}
+					</h1>
+				</form>
+			</div>
+		</div>
+	</div> -->
+	<!-- <div class="container cont-poke">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<div class="table-responsive">
+					<table class="table table-bordered">
+						<tr>
+							<th>Pokemon</th>
+							<th>ID</th>
+							<th>Abilitie</th>
+						</tr>
+						<tbody ng-repeat="y in PokedexB | orderBy: 'id'">
+							<tr>
+								<td class="danger">
+									{{ y.data.name }}
+								</td>
+								<td class="success">
+									{{ y.data.id }}
+								</td>
+								<td class="warning">
+									{{ y.data.abilities.name }}
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- <div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="https://i.pinimg.com/originals/5a/9f/e2/5a9fe2b1b9ac7fdddc9748f02ab6a2f4.jpg" alt="" class="img-responsive goal">
+				<h1 ng-repeat="y in PokedexB" class="text-center">
+					Pokemon: {{ y.data.name }} <span class="caret"></span>
+				</h1>
+			</div>
+		</div>
+	</div> -->
+	<div class="container-fluid navBar">
+		<div class="row aTotal text-center">
+			<div class="col-md-12 vCenter aTotal">
+				<span class="title">Pokedex</span>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="container-fluid">
+		<!-- 01000011 01100101 01101100 01110110 01111001 01101110-->
+		<div class="row">
+			<div class="col-md-3 padd vCenter" ng-repeat="x in PokedexB | orderBy: 'id'">
+				<div class="pokeInfo">
+					<div>
+						<img src="{{ x.data.sprites.front_default }}" alt="" class="imgPoke" id="foto">
+					</div>
+					<div class="namePoke">
+						Pokemon:
+						{{ x.data.name }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button class="btn btn-defaul" id="hide">
+		hide
+	</button>
+	<!-- AngularJS v1 -->
+	<script src="lib/angular.min.js"></script>
+	<!-- Custom scripts -->
+	<script src="js/main.js"></script>
+</body>
+</html>

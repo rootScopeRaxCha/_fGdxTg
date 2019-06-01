@@ -1,0 +1,57 @@
+.cont-poke {
+	padding-top: 2%;
+}
+
+.goal {
+	width: 450px;
+ 	height: 450px;
+ 	border: 1px solid #000;
+ 	margin: auto;
+}
+
+.title {
+	font-size: 60px;
+	font-weight: 800;
+	color: #fff;
+	text-shadow: 4px 4px 4px #000;
+	font-family: Source Code Pro;
+}
+
+.navBar {
+	height: 80px;
+	background-color: #F1524F;
+}
+
+.vCenter {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.aTotal {
+	height: 100%;
+}
+
+.pokeInfo {
+	border: 1.5px solid #2d2d2d;
+	height: auto;
+}
+
+.padd {
+	padding: 4%;
+}
+/*01000011 01100101 01101100 01110110 01111001 01101110*/
+.imgPoke {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.namePoke {
+	padding: 4%;
+	border-top: 2px solid #000;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 25px;
+}
+/*  */
